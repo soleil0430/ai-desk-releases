@@ -9,15 +9,29 @@ AI 를 쓰는 동안 **기다리고, 놓치고, 쌓이는 것**을 맥 메뉴바
 - Apple Silicon 맥 (M1 이후), macOS 14 (Sonoma) 이상
 - Claude Code 또는 Codex 를 설치하고 로그인해 둔 상태 (없으면 앱은 열리지만 보여 줄 것이 거의 없습니다)
 
-## 설치
+## 설치 (터미널 한 줄, 추천)
 
-1. [최신 릴리스](https://github.com/soleil0430/ai-desk-releases/releases/latest)에서 `ai-desk.zip` 을 받습니다
-2. 압축을 풀고 `AI 작업실.app` 을 **응용 프로그램** 폴더로 옮깁니다
-3. 앱을 엽니다. "Apple 에서 확인할 수 없습니다" 창이 뜨면 **완료**를 누릅니다
-4. **시스템 설정 → 개인정보 보호 및 보안**을 열고 아래쪽 "AI 작업실" 옆 **그래도 열기**를 누른 뒤, 암호를 넣고 다시 **그래도 열기**를 누릅니다 (처음 한 번만)
-5. 처음 안내를 따라갑니다
-   - 키체인 창이 뜨면 로그인 암호를 넣고 **항상 허용**을 누릅니다 (Claude 잔여량 조회용)
-   - 세션 알림 연결에 동의하면 `~/.claude/settings.json`, `~/.codex/hooks.json` 에 알림 명령이 들어갑니다 (원본은 `.ai-desk-backup` 으로 남음)
+터미널에 붙여 넣고 Enter. 받기 → 응용 프로그램 폴더에 넣기 → 켜기까지 한 번에 하고, 보안 경고도 뜨지 않습니다.
+
+```bash
+curl -fsSL https://github.com/soleil0430/ai-desk-releases/releases/latest/download/install.sh | bash
+```
+
+## 설치 (dmg)
+
+터미널이 싫으면:
+
+1. [ai-desk.dmg](https://github.com/soleil0430/ai-desk-releases/releases/latest/download/ai-desk.dmg) 를 받아 엽니다
+2. 창에 보이는 `AI 작업실` 아이콘을 옆의 **Applications** 폴더로 끌어다 놓습니다
+3. 응용 프로그램 폴더에서 앱을 엽니다. "Apple 에서 확인할 수 없습니다" 창이 뜨면 **완료**를 누릅니다
+4. **시스템 설정 → 개인정보 보호 및 보안** 아래쪽 "AI 작업실" 옆 **그래도 열기**를 누르고, 암호를 넣은 뒤 다시 **그래도 열기** (처음 한 번만. Apple 유료 서명이 없어서 필요합니다)
+
+## 처음 실행
+
+처음 안내를 따라갑니다.
+
+- 키체인 창이 뜨면 로그인 암호를 넣고 **항상 허용**을 누릅니다 (Claude 잔여량 조회용)
+- 세션 알림 연결에 동의하면 `~/.claude/settings.json`, `~/.codex/hooks.json` 에 알림 명령이 들어갑니다 (원본은 `.ai-desk-backup` 으로 남음)
 
 ## 업데이트
 
